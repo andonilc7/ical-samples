@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+PRODID:-//VenSource//Test Fixtures//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:500 Beach Rd
+
+BEGIN:VEVENT
+UID:beach-001@airbnb.com
+DTSTAMP:20260927T120000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261001
+SUMMARY:Reserved
+DESCRIPTION:Reservation URL: https://www.airbnb.com/hosting/reservations/de
+ tails/HMBEACH001\nPhone Number (Last 4 Digits): 4417
+END:VEVENT
+BEGIN:VEVENT
+UID:beach-002@airbnb.com
+DTSTAMP:20260927T120000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261009
+SUMMARY:Reserved
+DESCRIPTION:Reservation URL: https://www.airbnb.com/hosting/reservations/de
+ tails/HMBEACH002\nPhone Number (Last 4 Digits): 4417
+END:VEVENT
+BEGIN:VEVENT
+UID:beach-003@airbnb.com
+DTSTAMP:20260927T120000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261021
+SUMMARY:Reserved
+DESCRIPTION:Reservation URL: https://www.airbnb.com/hosting/reservations/de
+ tails/HMBEACH003\nPhone Number (Last 4 Digits): 4417
+END:VEVENT
+
+END:VCALENDAR
