@@ -15,5 +15,15 @@ DESCRIPTION:Reservation URL: https://www.vrbo.com/hosting/reservations/de
  tails/HMOCEAN001\nPhone Number (Last 4 Digits): 4417
 END:VEVENT
 
+BEGIN:VEVENT
+UID:booking-new-ical-002@vrbo.com
+DTSTAMP:20260927T120000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:202610015
+SUMMARY:Reserved
+DESCRIPTION:Reservation URL: https://www.vrbo.com/hosting/reservations/de
+ tails/HMOCEAN001\nPhone Number (Last 4 Digits): 4417
+END:VEVENT
+
 
 END:VCALENDAR
