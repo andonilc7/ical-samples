@@ -1,4 +1,4 @@
-# VenSource iCal test fixtures
+# iCal samples
 
 Static `.ics` calendar feeds used to test VenSource's booking sync. They stand
 in for a real Airbnb or VRBO export so the sync engine can be exercised against
@@ -11,18 +11,18 @@ here are stable and work for anyone on the team without setup.
 
 ## Never put a real feed in this repo
 
-Only synthetic fixtures belong here. A real Airbnb or VRBO export lists
+Only synthetic samples belong here. A real Airbnb or VRBO export lists
 actual addresses alongside the dates nobody will be home, and this repo is
 public and permanent. Test against a real feed by pointing a property
 directly at the provider's URL, never by copying it here.
 
-## Using a fixture
+## Using a sample
 
 Paste the raw URL into a property's iCal field under manager, property,
 Settings:
 
 ```
-https://raw.githubusercontent.com/andonilc7/vensource-ical-fixtures/main/<file>.ics
+https://raw.githubusercontent.com/andonilc7/ical-samples/main/<file>.ics
 ```
 
 Regenerate dates whenever they have drifted into the past:
@@ -45,7 +45,7 @@ its cache key, so `?v=2` still returns the cached copy. When you need a
 change live immediately, either rename the file or swap `main` in the URL
 for the commit SHA, which is immutable and therefore always current.
 
-## The fixtures
+## The samples
 
 | File | Purpose |
 | --- | --- |
