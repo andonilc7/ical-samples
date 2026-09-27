@@ -1,25 +1,16 @@
 # iCal samples
 
-Static `.ics` calendar feeds used to test VenSource's booking sync. They stand
-in for a real Airbnb or VRBO export so the sync engine can be exercised against
-data we control.
-
-This repo is public on purpose. The app repo is private, and
-`raw.githubusercontent.com` URLs for a private repo need a token that expires,
-which makes them useless to paste into a property's iCal field. Public URLs
-here are stable and work for anyone on the team without setup.
+Hand-written `.ics` calendars for testing a booking sync. They stand in for a
+real Airbnb or VRBO export so you can control the dates, UIDs, and edge cases.
 
 ## Never put a real feed in this repo
 
-Only synthetic samples belong here. A real Airbnb or VRBO export lists
-actual addresses alongside the dates nobody will be home, and this repo is
-public and permanent. Test against a real feed by pointing a property
-directly at the provider's URL, never by copying it here.
+Only synthetic samples belong here. A real export lists actual addresses
+alongside the dates nobody will be home, and this repo is public and
+permanent. Test against a real feed by pointing at the provider's URL,
+never by copying it here.
 
 ## Using a sample
-
-Paste the raw URL into a property's iCal field under manager, property,
-Settings:
 
 ```
 https://raw.githubusercontent.com/andonilc7/ical-samples/main/<file>.ics
@@ -32,7 +23,7 @@ node generate.mjs
 ```
 
 That rewrites every generated file relative to today. `Arsenal_FC.ics` is
-left alone: it is a real published feed kept verbatim so the parser is
+left alone: it is a real published feed kept verbatim so a parser can be
 tested against something we did not author.
 
 ## Caching
@@ -53,9 +44,9 @@ for the commit SHA, which is immutable and therefore always current.
 | `vrbo-1234-ocean-drive.ics` | Second feed for the same property. Shares one UID with the Airbnb file so multi-feed sync must produce one booking, not two |
 | `airbnb-500-beach-road.ics` | Three bookings with gaps, a second property's happy path |
 | `edge-cases-555-juniper-road.ics` | Stay already underway, one-night stay, two-week stay, far-future stay, and a `STATUS:CANCELLED` event the parser must drop |
-| `empty.ics` | Valid but empty calendar. Point a property here after a populated feed to confirm vanished bookings get deleted |
+| `empty.ics` | Valid but empty calendar. Point here after a populated feed to confirm vanished bookings get deleted |
 | `uid-collision-500-beach-road.ics` | Reuses a UID that belongs to Ocean Drive. Only for testing whether booking identity is scoped per property |
-| `Arsenal_FC.ics` | A real published football calendar, for testing the parser against a feed we didn't hand-write |
+| `Arsenal_FC.ics` | A real published football calendar, for testing a parser against a feed we didn't hand-write |
 
 The generated files also fold long `DESCRIPTION` lines the way RFC 5545
-requires, so the unfolding path in the parser gets exercised.
+requires, so the unfolding path in a parser gets exercised.

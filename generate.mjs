@@ -83,7 +83,7 @@ function event({ uid, start, end, summary, description, status }) {
 function calendar(name, events) {
   return [
     "BEGIN:VCALENDAR",
-    "PRODID:-//VenSource//Test Fixtures//EN",
+    "PRODID:-//ical-samples//EN",
     "VERSION:2.0",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
@@ -161,31 +161,31 @@ const files = {
   // stay, and one far enough out to catch any windowing assumptions.
   "edge-cases-555-juniper-road.ics": calendar("555 Juniper Road", [
     event({
-      uid: "juniper-in-progress@vensource.test",
+      uid: "juniper-in-progress@ical-samples.test",
       start: -1,
       end: 1,
       summary: "Reserved - checkout tomorrow",
     }),
     event({
-      uid: "juniper-one-night@vensource.test",
+      uid: "juniper-one-night@ical-samples.test",
       start: 3,
       end: 4,
       summary: "Reserved - one night",
     }),
     event({
-      uid: "juniper-long-stay@vensource.test",
+      uid: "juniper-long-stay@ical-samples.test",
       start: 6,
       end: 20,
       summary: "Reserved - fourteen nights",
     }),
     event({
-      uid: "juniper-far-future@vensource.test",
+      uid: "juniper-far-future@ical-samples.test",
       start: 300,
       end: 305,
       summary: "Reserved - next year",
     }),
     event({
-      uid: "juniper-cancelled@vensource.test",
+      uid: "juniper-cancelled@ical-samples.test",
       start: 9,
       end: 11,
       summary: "Reserved - cancelled, should not appear",
