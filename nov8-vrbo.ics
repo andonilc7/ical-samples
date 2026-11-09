@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//VenSource//MVP History Test//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VenSource MVP history test
+
+BEGIN:VEVENT
+UID:vensource-mvp-20261128-ongoing-keep@vensource.test
+DTSTAMP:20261109T032706Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:202611130
+SUMMARY:TEST - Ongoing stay - keep
+DESCRIPTION:Remove this event and resync. The ongoing booking and cleaning 
+ should remain.
+END:VEVENT
+
+
+END:VCALENDAR
