@@ -14,23 +14,5 @@ SUMMARY:TEST - Ongoing stay - keep
 DESCRIPTION:Remove this event and resync. The ongoing booking and cleaning 
  should remain.
 END:VEVENT
-BEGIN:VEVENT
-UID:vensource-mvp-20261108-future-remove@vensource.test
-DTSTAMP:20261109T032706Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261114
-SUMMARY:TEST - Future pending - remove
-DESCRIPTION:Remove this event and resync. The future booking and pending cl
- eaning should disappear.
-END:VEVENT
 
-BEGIN:VEVENT
-UID:vensource-mvp-20261108-future-work-keep@vensource.test
-DTSTAMP:20261109T032706Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261118
-SUMMARY:TEST - Future with started work - keep
-DESCRIPTION:Start its cleaning before removing this event. The booking and 
- cleaning should remain.
-END:VEVENT
 END:VCALENDAR
