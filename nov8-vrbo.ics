@@ -9,7 +9,7 @@ BEGIN:VEVENT
 UID:vensource-mvp-20261128-ongoing-keep@vensource.test
 DTSTAMP:20261109T032706Z
 DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:202611130
+DTEND;VALUE=DATE:20261130
 SUMMARY:TEST - Ongoing stay - keep
 DESCRIPTION:Remove this event and resync. The ongoing booking and cleaning 
  should remain.
