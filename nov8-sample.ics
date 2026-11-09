@@ -24,4 +24,13 @@ SUMMARY:TEST - Testing auto resync
 DESCRIPTION: Testing autoresync (cron job)
 END:VEVENT
 
+BEGIN:VEVENT
+UID:vensource-mvp-20261120-future-test-cron@vensource.test
+DTSTAMP:20261109T032706Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:TEST - Testing auto resync
+DESCRIPTION: Testing autoresync (cron job)
+END:VEVENT
+
 END:VCALENDAR
